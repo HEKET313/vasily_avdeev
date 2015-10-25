@@ -4,6 +4,178 @@ Author: Amethyst company. HEKET313
 Description: Theme for site http://tema100.ru
 Version: 1.0
 */
-.red {
-  color: #ac0404;
+html {
+  min-width: 1024px;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  width: 100%;
+}
+/*
+Theme Name: Tema 100
+Author: Amethyst company. HEKET313
+Description: Head style
+Version: 1.0
+*/
+.head {
+  /*
+Theme Name: Tema 100
+Author: Amethyst company. HEKET313
+Description: Top menu style
+Version: 1.0
+*/
+  min-width: 1024px;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 660px;
+  background: #FFFFFF url("/wp-content/themes/tema100/images/bg.jpg") center center no-repeat;
+  background-position-y: -158px;
+  z-index: 0;
+}
+.head .menu {
+  z-index: 10;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.73);
+  min-height: 36px;
+  position: fixed;
+  top: 0;
+}
+.head .menu .menu-inner {
+  margin: 5px auto 1px;
+  text-align: center;
+}
+.head .menu .menu-inner ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.head .menu .menu-inner ul li {
+  text-transform: uppercase;
+  padding-top: 5px;
+  width: 86px;
+  display: inline-block;
+}
+.head .menu .menu-inner ul li a {
+  text-decoration: none;
+  color: #000;
+  width: 100%;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+.head .menu .menu-inner ul li a:hover {
+  border-color: #000;
+}
+.head .menu .menu-inner ul li:nth-child(4) {
+  font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+  .head .menu .menu-inner ul li:nth-child(4) {
+    display: none;
+  }
+}
+.head .head-content {
+  width: 1024px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 190px auto auto;
+}
+.head .head-content > div {
+  width: 50%;
+}
+.head .head-content .caption {
+  text-align: center;
+  padding-top: 20px;
+}
+.head .head-content .caption h1 {
+  min-height: 52px;
+  line-height: 62px;
+  font-size: 52px;
+}
+.head .head-content .caption h2 {
+  min-height: 26px;
+  line-height: 30px;
+  font-size: 24px;
+  letter-spacing: 8px;
+  font-weight: 100;
+}
+.head .head-content .badge {
+  text-align: center;
+}
+.head .head-content .badge p {
+  width: 343px;
+  line-height: 59px;
+  font-size: 49px;
+  background-color: rgba(255, 255, 255, 0.73);
+  min-height: 202px;
+  padding: 35px 20px 20px;
+  display: inline-block;
+  margin-top: 0;
+}
+.content-area {
+  width: 1024px;
+  margin: 710px auto auto;
+}
+.content-area table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.content-area table tr:first-child td {
+  border-bottom: 1px solid #000;
+  min-height: 33px;
+  font-size: 49px;
+  line-height: 47px;
+  padding-top: 20px;
+}
+.content-area table td:first-child,
+.content-area table tr:nth-child(2) td:nth-child(2) {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.content-area table tr:nth-child(2) td:nth-child(2) {
+  padding-top: 40px;
+  vertical-align: top;
+}
+.content-area table tr:nth-child(3) td {
+  vertical-align: bottom;
+}
+.content-area table:nth-child(odd) {
+  text-align: right;
+}
+.content-area table:nth-child(odd)  {
+  width: 50px;
+  border-left: 1px solid #000;
+}
+.content-area table:nth-child(odd) tr:nth-child(2) td:nth-child(1) {
+  padding: 0;
+  width: 500px;
+  height: 500px;
+  background-size: cover !important;
+}
+.content-area table:nth-child(even) {
+  text-align: left;
+}
+.content-area table:nth-child(even)  {
+  width: 50px;
+  border-right: 1px solid #000;
+}
+.content-area table:nth-child(even) tr:nth-child(2) td:nth-child(3) {
+  padding: 0;
+  width: 500px;
+  height: 500px;
+  background-size: cover !important;
+}
+.content-area table:nth-child(1) tr:nth-child(2) td:nth-child(1) {
+  background: #92ADB8 url("/wp-content/themes/tema100/images/man.jpg") no-repeat left top;
+}
+.content-area table:nth-child(2) tr:nth-child(2) td:nth-child(3) {
+  background: #92ADB8 url("/wp-content/themes/tema100/images/coffee.jpg") no-repeat left top;
 }

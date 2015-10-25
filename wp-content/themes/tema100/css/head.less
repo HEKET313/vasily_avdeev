@@ -1,0 +1,61 @@
+/*
+Theme Name: Tema 100
+Author: Amethyst company. HEKET313
+Description: Head style
+Version: 1.0
+*/
+.head{
+  @import "top_menu.less";
+  @white-bg: rgba(255, 255, 255, 0.73);
+  min-width: @site-width;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: @head-height;
+  background: #FFFFFF url("/wp-content/themes/tema100/images/bg.jpg") center center no-repeat;
+  background-position-y: -158px;
+  z-index: 0;
+  .head-content{
+    width: @site-width;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 190px auto auto;
+    >div{
+      width: 50%;
+    }
+    .caption {
+      text-align: center;
+      padding-top: 20px;
+      h1 {
+        min-height: 52px;
+        line-height: 62px;
+        font-size: 52px;
+      }
+      h2{
+        min-height: 26px;
+        line-height: 30px;
+        font-size: 24px;
+        letter-spacing: 8px;
+        font-weight: 100;
+      }
+    }
+    .badge{
+      text-align: center;
+      p{
+        width: 343px;
+        line-height: 59px;
+        font-size: 49px;
+        background-color: @white-bg;
+        min-height: 202px;
+        padding: 35px 20px 20px;
+        display: inline-block;
+        margin-top: 0;
+      }
+    }
+  }
+}
