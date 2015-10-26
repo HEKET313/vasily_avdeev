@@ -25,15 +25,20 @@ Version: 1.0
         display: inline-block;
         a{
           text-decoration: none;
-          color: #000;
+          color: @font-color;
           width: 100%;
           font-size: 12px;
           display: inline-block;
           line-height: 25px;
           border-bottom: 1px solid rgba(255, 255, 255, 0);
-        }
-        a:hover{
-          border-color: #000;
+          &:hover{
+            border-color: @border-color;
+          }
+          &.disabled{
+            color: #929292;
+            border-color: rgba(255,255,255,0);
+            cursor: default;
+          }
         }
       }
       li:nth-child(4){

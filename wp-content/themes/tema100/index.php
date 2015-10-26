@@ -69,6 +69,42 @@ get_header(); ?>
             </tr>
             </tbody>
         </table>
+        <table>
+            <tbody>
+            <tr>
+                <td></td>
+                <td>Регистрация</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2"></td>
+                <td>Начните зарабатывать деньги не сейчас, а ПРЯМО СЕЙЧАС!</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.organogold.com/signup?personal_sponsor_distributor_id=10000011036&set_lang=ru&set_country=ru&only_distributor=true#step1_wrapper" target="_blank">Перейти</a></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+            <tr>
+                <td></td>
+                <td>Контакты</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Есть вопросы? Напишите мне!</td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="#">Написать</a></td>
+            </tr>
+            </tbody>
+        </table>
         <?php if ( have_posts() ) : ?>
             <?php /* The loop */ ?>
             <?php while ( have_posts() ) : the_post(); ?>

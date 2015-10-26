@@ -6,6 +6,9 @@ Version: 1.0
 */
 @site-width: 1024px;
 @head-height: 660px;
+@font-color: #000;
+@border-color: @font-color;
+
 html{
   min-width: @site-width;
 }
@@ -16,7 +19,7 @@ body{
 }
 @import "head.less";
 .content-area{
-  @table-border: 1px solid #000;
+  @table-border: 1px solid @border-color;
   width: @site-width;
   margin: @head-height + 50px auto auto;
   table{
@@ -40,6 +43,22 @@ body{
     }
     tr:nth-child(3) td{
       vertical-align: bottom;
+      padding-bottom: 40px;
+      a {
+        display: inline-block;
+        width: 160px;
+        min-height: 43px;
+        border: 1px solid @border-color;
+        text-decoration: none;
+        color: @font-color;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 41px;
+        font-size: 24px;
+        &:hover{
+          background-color: #F0EFEF;
+        }
+      }
     }
 
     .table-row-mixin(@text-side, @empty-column-number, @image-column){
@@ -82,5 +101,12 @@ body{
     &:nth-child(2){
       .td-bg-image-mixin(url("/wp-content/themes/tema100/images/coffee.jpg"), 3);
     }
+    &:nth-child(3){
+      .td-bg-image-mixin(url("/wp-content/themes/tema100/images/contract.jpg"), 1);
+    }
+    &:nth-child(4){
+      .td-bg-image-mixin(url("/wp-content/themes/tema100/images/vasya.jpg"), 3);
+    }
   }
 }
+@import "footer.less";

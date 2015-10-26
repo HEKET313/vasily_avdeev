@@ -15,7 +15,7 @@
             <li><a href="#">Кофе</a></li>
             <li>100 X 100</li>
             <li><a href="#">Обучение</a></li>
-            <li><a href="#">Магазин</a></li>
+            <li><a class="disabled" href="#" onclick="return false;">Магазин</a></li>
             <li><a href="#">О себе</a></li>
         </ul>
     </div>
