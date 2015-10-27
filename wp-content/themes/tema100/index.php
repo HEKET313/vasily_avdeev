@@ -101,7 +101,7 @@ get_header(); ?>
             </tr>
             <tr>
                 <td></td>
-                <td><a href="#">Написать</a></td>
+                <td><a href="#callback" data-action="show-modal">Написать</a></td>
             </tr>
             </tbody>
         </table>
@@ -116,6 +116,7 @@ get_header(); ?>
         <?php endif; ?>
 
     </div><!-- #content -->
+    <?php include (TEMPLATEPATH . '/modal_callback.php'); ?>
 </div><!-- #primary -->
 
 <?php get_footer(); ?>
