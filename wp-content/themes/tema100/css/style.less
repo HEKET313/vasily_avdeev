@@ -20,6 +20,11 @@ body{
 }
 input, textarea{
   font-family: sans-serif !important;
+  display: inline-block;
+  -webkit-box-sizing: border-box; /* <=iOS4, <= Android  2.3 */
+  -moz-box-sizing: border-box; /* FF1+ */
+  box-sizing: border-box; /* Chrome, IE8, Opera, Safari 5.1*/
+  resize: none;
 }
 table{
   border-collapse: collapse;
@@ -41,7 +46,9 @@ a{
     background-color: #F0EFEF;
   }
 }
-@import "head.less";
-@import "index_content.less";
-@import "index_modal.less";
-@import "footer.less";
+@import "head";
+@import "modal";
+@import "index/index_content";
+@import "index/modal_callback";
+@import "index/modal_idea";
+@import "footer";

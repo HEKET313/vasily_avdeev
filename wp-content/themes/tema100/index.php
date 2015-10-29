@@ -46,7 +46,7 @@ get_header(); ?>
                 <td></td>
             </tr>
             <tr>
-                <td><a href="#">Смотреть</a></td>
+                <td><a href="#idea" data-action="show-modal">Смотреть</a></td>
                 <td></td>
             </tr>
             </tbody>
@@ -65,7 +65,7 @@ get_header(); ?>
             </tr>
             <tr>
                 <td></td>
-                <td><a href="#">Смотреть</a></td>
+                <td><a href="#coffee" data-action="show-modal">Смотреть</a></td>
             </tr>
             </tbody>
         </table>
@@ -116,7 +116,9 @@ get_header(); ?>
         <?php endif; ?>
 
     </div><!-- #content -->
-    <?php include (TEMPLATEPATH . '/modal_callback.php'); ?>
+    <?php include (TEMPLATEPATH . '/index/modal_idea.php'); ?>
+    <?php include (TEMPLATEPATH . '/index/modal_coffee.php'); ?>
+    <?php include (TEMPLATEPATH . '/index/modal_callback.php'); ?>
 </div><!-- #primary -->
 
 <?php get_footer(); ?>

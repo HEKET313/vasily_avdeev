@@ -1,4 +1,4 @@
-<div class="modal" id="callback">
+<div class="modal" id="callback" data-width="500px">
     <div class="modal-body">
         <div class="modal-header">
             <div class="modal-close"><a href="#" data-action="close">Закрыть</a></div>

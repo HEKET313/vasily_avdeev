@@ -1,4 +1,10 @@
 (function($){
+    function setPosition(modal){
+        modal.css({
+            top: ($(window).height() - modal.height())/2,
+            left: ($(window).width() - modal.width())/2
+        });
+    }
     $.fn.extend({
         modal: function(action){
             var modal = $(this);
@@ -14,6 +20,9 @@
                         fade = $('<div class="modal-fade"></div>');
                         $('body').prepend(fade);
                     }
+                    if(modal.data('width') != undefined){
+                        modal.css('width',modal.data('width'));
+                    }
                     $(window).resize(function(){
                         setPosition(modal);
                     });
@@ -25,13 +34,6 @@
                     fade.show();
                     modal.show();
                     setPosition(modal);
-
-                    function setPosition(modal){
-                        modal.css({
-                            top: ($(window).height() - modal.height())/2,
-                            left: ($(window).width() - modal.width())/2
-                        });
-                    }
 
                     break;
                 case 'hide':
