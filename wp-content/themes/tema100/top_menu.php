@@ -7,16 +7,17 @@
  */
 ?>
 
+<!--suppress HtmlUnknownTarget -->
 <div class="menu">
     <div class="menu-inner">
         <ul>
             <li><a href="/">Главная</a></li>
-            <li><a href="#">Доходы</a></li>
-            <li><a href="#">Кофе</a></li>
+            <li><a class="disabled" href="#">Доходы</a></li>
+            <li><a href="/coffee">Кофе</a></li>
             <li>100 X 100</li>
-            <li><a href="#">Обучение</a></li>
-            <li><a class="disabled" href="#" onclick="return false;">Магазин</a></li>
-            <li><a href="#">О себе</a></li>
+            <li><a class="disabled" href="#">Обучение</a></li>
+            <li><a class="disabled" href="#">Магазин</a></li>
+            <li><a class="disabled" href="#">О себе</a></li>
         </ul>
     </div>
 </div>
