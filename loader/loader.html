@@ -1,0 +1,41 @@
+
+<html>
+<script src="../wp-content/themes/tema100/js/jquery-2.1.4.min.js"></script>
+<style>
+	#loader {
+		background:white;
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;
+		position:fixed;
+
+	}
+	#loader>div{
+		background:white;
+		width:100px;
+		height:100px;
+		margin:-50px 0 0 -50px;
+		top:50%;
+		left:50%;
+		position:absolute;
+	}
+	#loader>div>p{
+		margin-left: 13px;
+	}
+</style>
+	<body>
+	<div id="loader">	
+
+		 <div>
+			 <img src="loader.gif"/>
+			 <p>LOADING</p>		
+		</div>
+	</div>
+	</body>
+<script type="text/javascript">
+$(window).load(function () {
+	$("#loader").hide()
+});	
+</script>
+</html>
