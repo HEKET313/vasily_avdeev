@@ -8,21 +8,18 @@ Version: 1.0
   @import "top_menu.less";
   @white-bg: rgba(255, 255, 255, 0.73);
   min-width: @site-width;
-  top: 0;
-  position: absolute;
   width: 100%;
   height: @head-height;
-  background: #FFFFFF  center center no-repeat;
+  top: 0;
+  background: #FFFFFF center center no-repeat;
   background-size: cover;
   background-image: url("/wp-content/themes/tema100/images/bg.jpg");
   &.city{
     background-image: url("/wp-content/themes/tema100/images/bg.jpg");
-    background-position-y: -327px;
   }
   &.coffee{
     background-image: url("/wp-content/themes/tema100/images/bg_coffee.jpg");
   }
-  background-position-y: -158px;
   z-index: 0;
   .head-content{
     width: @site-width;
@@ -33,7 +30,8 @@ Version: 1.0
     display: flex;
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
-    margin: 190px auto auto;
+    margin: auto;
+    padding-top: 190px;
     >div{
       width: 50%;
     }
