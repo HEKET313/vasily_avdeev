@@ -4,24 +4,27 @@ Author: Amethyst company. HEKET313
 Description: Theme for site http://tema100.ru
 Version: 1.0
 */
+@import "../fonts/neris/neris.css";
+
 @site-width: 1024px;
 @head-height: 660px;
 @font-color: #000;
 @border-color: @font-color;
 @border: 1px solid @border-color;
 @footer-height: 100px;
+@body-font: Neris !important;
+@slim-font: Neris;
 
 .caption-font(){
-  font-family: abril-fatface, serif;
+  font-family: Neris;
   font-weight: 400 !important;
 }
 .slim-caption{
-  font-family: source-sans-pro, sans-serif;
+  font-family: @slim-font;
   font-weight: 300;
 }
 .slim-caption-bold{
-  font-family: source-sans-pro, sans-serif;
-  font-weight: bold;
+  font-family: @slim-font;
 }
 
 html{
@@ -29,7 +32,7 @@ html{
   height: 100vh;
 }
 body{
-  font-family: Arial, Helvetica Neue, Helvetica, sans-serif !important;
+  font-family: @body-font;
   margin: 0;
   width: 100%;
   min-height: 100vh;

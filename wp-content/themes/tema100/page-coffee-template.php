@@ -44,7 +44,7 @@ get_header(); ?>
                             <div class="product">
                                 <p><?=$post->post_title?></p>
                                 <?=get_the_post_thumbnail($post->ID)?>
-                                <a href="#" class="button small">Подробнее</a>
+                                <a href="<?=get_permalink($post->ID)?>" class="button small">Подробнее</a>
                             </div>
                             <?php endforeach; ?>
                         </td>
