@@ -22,6 +22,10 @@ body{
   min-height: 100vh;
   height: auto;
   position: relative;
+  .site-content{
+    width: @site-width;
+    margin: auto;
+  }
   .content-area{
     padding-bottom: @footer-height;
   }
@@ -66,3 +70,4 @@ a{
 @import "index/modal_callback";
 @import "coffee/coffee_content";
 @import "footer";
+@import "error";

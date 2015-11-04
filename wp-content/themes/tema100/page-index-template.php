@@ -12,7 +12,7 @@ get_header(); ?>
 <?php include (TEMPLATEPATH . '/baner.php'); ?>
 <script type="text/javascript" src="<?=get_template_directory_uri(); ?>/js/index/main.js"></script>
 <div id="primary" class="content-area">
-    <div id="content" class="site-content" role="main">
+    <div id="content" class="site-content main">
 
         <?php if ( have_posts() ) : ?>
 
