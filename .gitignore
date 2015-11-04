@@ -1,13 +1,7 @@
 private_key_tema100.ppk
 private_key_tema100_open_ssh
 public_key_tema100
+/.htaccess
 .idea/
-/wp-content/themes/tema100/css/index/modal_idea.css
-/wp-content/themes/tema100/css/index/modal_callback.css
-/wp-content/themes/tema100/css/index/index_content.css
-/wp-content/themes/tema100/css/modal.css
-/wp-content/themes/tema100/css/head.css
-/wp-content/themes/tema100/css/footer.css
-/wp-content/themes/tema100/css/coffee/coffee_content.css
-/wp-content/themes/tema100/css/content_table_mixins.css
+/wp-admin/.htaccess
 Исходники
