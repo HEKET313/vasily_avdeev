@@ -20,6 +20,10 @@ Version: 1.0
   &.coffee{
     background-image: url("/wp-content/themes/tema100/images/bg_coffee.jpg");
   }
+  &.education{
+    background-image: url("/wp-content/themes/tema100/images/bg_education.jpg");
+    background-position: top;
+  }
   z-index: 0;
   .head-content{
     width: @site-width;
@@ -36,24 +40,34 @@ Version: 1.0
       width: 50%;
     }
     .caption {
+      .caption-font();
       text-align: center;
       padding-top: 20px;
       h1 {
         min-height: 52px;
         line-height: 62px;
+        font: inherit;
         font-size: 52px;
       }
       h2{
+        padding-top: 3px;
         min-height: 26px;
         line-height: 30px;
+        font: inherit;
         font-size: 24px;
         letter-spacing: 8px;
-        font-weight: 100;
+        @grad-start: rgba(255,255,255,0);
+        @grad-top: rgba(255,255,255,1);
+        background: linear-gradient(to right, @grad-start , @grad-top, @grad-start);
+        background: -webkit-linear-gradient(left, @grad-start , @grad-top, @grad-start);
+        background: -o-linear-gradient(right, @grad-start , @grad-top, @grad-start);
+        background: -moz-linear-gradient(right, @grad-start , @grad-top, @grad-start);
       }
     }
     .badge{
       text-align: center;
       p{
+        .slim-caption();
         width: 343px;
         line-height: 59px;
         font-size: 49px;

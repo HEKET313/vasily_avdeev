@@ -11,12 +11,25 @@ Version: 1.0
 @border: 1px solid @border-color;
 @footer-height: 100px;
 
+.caption-font(){
+  font-family: abril-fatface, serif;
+  font-weight: 400 !important;
+}
+.slim-caption{
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 300;
+}
+.slim-caption-bold{
+  font-family: source-sans-pro, sans-serif;
+  font-weight: bold;
+}
+
 html{
   min-width: @site-width;
   height: 100vh;
 }
 body{
-  font-family: sans-serif !important;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif !important;
   margin: 0;
   width: 100%;
   min-height: 100vh;
@@ -69,5 +82,6 @@ a{
 @import "index/index_content";
 @import "index/modal_callback";
 @import "coffee/coffee_content";
+@import "education/education_content";
 @import "footer";
 @import "error";

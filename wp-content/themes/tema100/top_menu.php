@@ -15,7 +15,7 @@
             <li><a class="disabled" href="#">Доходы</a></li>
             <li><a href="/coffee">Кофе</a></li>
             <li>100 X 100</li>
-            <li><a class="disabled" href="#">Обучение</a></li>
+            <li><a href="/education">Обучение</a></li>
             <li><a class="disabled" href="#">Магазин</a></li>
             <li><a class="disabled" href="#">О себе</a></li>
         </ul>
