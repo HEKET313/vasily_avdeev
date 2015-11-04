@@ -1,0 +1,29 @@
+#loader {
+    background: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 999;
+}
+#loader>div {
+    background: url("/wp-content/themes/tema100/images/loader.gif") top left no-repeat;
+    height: 135px;
+    text-align: center;
+    width: 100px;
+    margin: -50px 0 0 -50px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+#loader>div>p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    font-family: source-sans-pro, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase
+}

@@ -8,7 +8,6 @@
  */
 get_header(); ?>
 
-<?php include (TEMPLATEPATH . '/baner.php'); ?>
     <script type="text/javascript" src="<?=get_template_directory_uri(); ?>/js/coffee/main.js"></script>
     <div id="primary" class="content-area">
         <div id="content" class="site-content coffee">

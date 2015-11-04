@@ -31,6 +31,7 @@
     <script type="text/javascript">
         document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/abril-fatface:n4:all;source-sans-pro:n3:all.js" type="text/javascript">\x3C/script>');
     </script>
+    <link rel="stylesheet/less" type="text/css" href="<?=get_template_directory_uri(); ?>/css/loader.css">
     <link rel="stylesheet/less" type="text/css" href="<?=get_template_directory_uri(); ?>/css/style.less">
     <script type="text/javascript" src="<?=get_template_directory_uri(); ?>/js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="<?=get_template_directory_uri(); ?>/js/less.js" data-env="development"></script>
@@ -38,3 +39,6 @@
     <script type="text/javascript" src="<?=get_template_directory_uri(); ?>/js/main.js"></script>
     <?php wp_head(); ?>
 </head>
+<body>
+    <?php include (TEMPLATEPATH . '/loader.php'); ?>
+    <?php include (TEMPLATEPATH . '/baner.php'); ?>
