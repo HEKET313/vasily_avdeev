@@ -4,7 +4,7 @@ Author: Amethyst company. HEKET313
 Description: Theme for site http://tema100.ru
 Version: 1.0
 */
-@import "../fonts/neris/neris.css";
+@import "font";
 
 @site-width: 1024px;
 @head-height: 660px;
@@ -12,27 +12,13 @@ Version: 1.0
 @border-color: @font-color;
 @border: 1px solid @border-color;
 @footer-height: 100px;
-@body-font: Neris !important;
-@slim-font: Neris;
-
-.caption-font(){
-  font-family: Neris;
-  font-weight: 400 !important;
-}
-.slim-caption{
-  font-family: @slim-font;
-  font-weight: 300;
-}
-.slim-caption-bold{
-  font-family: @slim-font;
-}
 
 html{
   min-width: @site-width;
   height: 100vh;
 }
 body{
-  font-family: @body-font;
+  .body-normal();
   margin: 0;
   width: 100%;
   min-height: 100vh;
@@ -47,7 +33,7 @@ body{
   }
 }
 input, textarea{
-  font-family: sans-serif !important;
+  .body-normal();
   display: inline-block;
   -webkit-box-sizing: border-box; /* <=iOS4, <= Android  2.3 */
   -moz-box-sizing: border-box; /* FF1+ */
@@ -82,7 +68,6 @@ a{
 
 @import "head";
 @import "modal";
-//@import "loader.css";
 @import "index/index_content";
 @import "index/modal_callback";
 @import "coffee/coffee_content";

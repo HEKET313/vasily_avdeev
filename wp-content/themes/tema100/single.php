@@ -25,7 +25,7 @@ get_header(); ?>
                     <tr>
                         <td></td>
                         <td>
-                            <h1></h1><?=$post->post_title?>
+                            <h1><?=$post->post_title?></h1>
                             <span class="date"><?=$post->post_date?></span>
                         </td>
                     </tr>
