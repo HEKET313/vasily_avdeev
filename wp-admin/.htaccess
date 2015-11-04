@@ -1,0 +1,7 @@
+
+
+# BEGIN WordPress Error Pages
+
+ErrorDocument 500 http://tema100.ru:80/500
+
+# END WordPress Error Pages
