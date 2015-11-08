@@ -1,4 +1,4 @@
-private_key_tema100.ppk
+﻿private_key_tema100.ppk
 private_key_tema100_open_ssh
 public_key_tema100
 /.htaccess
@@ -6,3 +6,4 @@ public_key_tema100
 .idea/
 /wp-admin/.htaccess
 Исходники
+backup

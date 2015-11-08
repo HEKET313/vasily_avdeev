@@ -14,9 +14,10 @@
         height: inherit;
         width: inherit;
         position: relative;
+        overflow: hidden;
       }
     }
-    input, textarea{
+    input, textarea, .wpcf7-form-control-wrap{
       width: 100%;
       padding: 0 5px;
       margin: 0;
@@ -29,6 +30,20 @@
       position: absolute;
       top: 0;
       left: 0;
+      &.wpcf7-not-valid{
+        &::-webkit-input-placeholder{
+          color: red;
+        }
+        &:-moz-placeholder{
+          color: red;
+        }
+        &::-moz-placeholder{
+          color: red;
+        }
+        &:-ms-input-placeholder{
+          color: red;
+        }
+      }
     }
     tr:first-child{
       td:first-child{
@@ -61,6 +76,10 @@
         max-height: 100%;
         max-width: 100%;
       }
+    }
+
+    .wpcf7-not-valid-tip{
+      display: none;
     }
   }
 }

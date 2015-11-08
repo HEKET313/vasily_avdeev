@@ -1,11 +1,11 @@
 /**
  * Created by Nikita on 04.11.2015.
  */
-    $(window).load(function () {
+    jQuery(window).load(function() {
         window.scrollTo(0,0);
-        $( "#loader" ).animate({
+        jQuery( "#loader" ).animate({
             opacity: 0
         }, 500, function() {
-            $("#loader").hide();
+            jQuery("#loader").hide();
         });
     });

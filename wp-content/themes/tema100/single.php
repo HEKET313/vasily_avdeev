@@ -21,24 +21,23 @@ get_header(); ?>
             <?php else : ?>
                 <?php get_template_part( 'content', 'none' ); ?>
             <?php endif; ?>
-                <table class="post">
-                    <tr>
-                        <td></td>
-                        <td>
-                            <h1><?=$post->post_title?></h1>
-                            <span class="date"><?=$post->post_date?></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <?php the_content();?>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+            <table class="post">
+                <tr>
+                    <td></td>
+                    <td>
+                        <h1><?=$post->post_title?></h1>
+                        <span class="date"><?=$post->post_date?></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <?php the_content();?>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-        </div><!-- #content -->
     </div><!-- #primary -->
 
 <?php get_footer(); ?>

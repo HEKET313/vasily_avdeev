@@ -14,7 +14,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><iframe width="853" height="480" src="https://www.youtube.com/embed/G8fW9JjQrmo" frameborder="0" allowfullscreen></iframe></td>
+                <td><iframe width="853" height="480" src="https://www.youtube.com/embed/G8fW9JjQrmo" allowfullscreen></iframe></td>
                 <td></td>
             </tr>
             <tr>
