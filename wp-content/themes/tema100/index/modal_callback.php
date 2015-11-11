@@ -6,6 +6,6 @@
         </div>
     </div>
     <div class="modal-content">
-        <?php echo do_shortcode( '[contact-form-7 id="58" title="Форма обратной связи"]' ); ?>
+        <?php echo do_shortcode( '[contact-form-7 id="45" title="Форма обратной связи"]' ); ?>
     </div>
 </div>
