@@ -1,0 +1,20 @@
+.site-content.about {
+  >table{
+    width: 100%;
+    margin-top: 50px;
+    td:first-child{
+      border-right: @border;
+      width: 50px;
+    }
+    tr:first-child td {
+      .table-caption-row();
+      padding-left: 40px;
+    }
+    tr:last-child td:last-child{
+      padding: 40px;
+      p{
+        margin: 0;
+      }
+    }
+  }
+}

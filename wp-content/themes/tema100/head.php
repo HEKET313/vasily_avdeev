@@ -2,6 +2,7 @@
     <meta name="viewport" content="width=1024, user-scalable=0"/>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <title><?php wp_title( '|', true, 'right' ); ?>Тема 100</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
     <link rel="stylesheet/less" type="text/css" href="<?=get_template_directory_uri(); ?>/css/loader.css">
     <link rel="stylesheet/less" type="text/css" href="<?=get_template_directory_uri(); ?>/css/style.less">
     <script type="text/javascript" src="<?=get_template_directory_uri(); ?>/js/jquery-2.1.4.min.js"></script>

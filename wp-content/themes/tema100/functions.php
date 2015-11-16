@@ -24,7 +24,7 @@ function royal_custom_error_pages() {
 
         // Setup Error page locations dynamically
         $error_pages = PHP_EOL. PHP_EOL . '# BEGIN WordPress Error Pages'. PHP_EOL. PHP_EOL;
-        $error_pages .= 'ErrorDocument 500 '.$website_url.'500'.PHP_EOL;
+        $error_pages .= 'ErrorDocument 500 '.$website_url.'error-500/'.PHP_EOL;
         $error_pages .= PHP_EOL. '# END WordPress Error Pages'. PHP_EOL;
 
         // Write the error page locations to HTACCESS
@@ -40,3 +40,5 @@ function new_excerpt_more( $more ) {
     return '... <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Читать далее >>', 'your-text-domain' ) . '</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+include 'classes/CommentWalker.php';

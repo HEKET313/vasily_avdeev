@@ -5,6 +5,7 @@
  * Date: 04.11.2015
  * Time: 21:40
  */
+
 get_header(); ?>
 
     <script type="text/javascript" src="<?=get_template_directory_uri(); ?>/js/education/main.js"></script>
@@ -36,6 +37,9 @@ get_header(); ?>
                     </td>
                 </tr>
             </table>
+            <?php if ( comments_open() || get_comments_number() ) :
+                comments_template();
+            endif; ?>
         </div>
 
     </div><!-- #primary -->
